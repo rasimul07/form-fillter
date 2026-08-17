@@ -1,8 +1,7 @@
 (() => {
   // lib/config.js
-  var AIML_API_KEY = true ? "17c18657bed4c1d456742ec968ce1e08" : "";
-  var AIML_API_URL = "https://api.aimlapi.com/v1/chat/completions";
-  var AIML_MODEL = true ? "openai/gpt-4o" : "openai/gpt-4o";
+  var AIML_API_URL = "https://api.openai.com/v1/chat/completions";
+  var AIML_MODEL = true ? "gpt-4o" : "gpt-4o";
 
   // node_modules/@faker-js/faker/dist/chunk-KERBADJJ.js
   var e = [{ name: "Aegean Airlines", iataCode: "A3" }, { name: "Aeroflot", iataCode: "SU" }, { name: "Aerolineas Argentinas", iataCode: "AR" }, { name: "Aeromexico", iataCode: "AM" }, { name: "Air Algerie", iataCode: "AH" }, { name: "Air Arabia", iataCode: "G9" }, { name: "Air Canada", iataCode: "AC" }, { name: "Air China", iataCode: "CA" }, { name: "Air Europa", iataCode: "UX" }, { name: "Air France", iataCode: "AF" }, { name: "Air India", iataCode: "AI" }, { name: "Air Mauritius", iataCode: "MK" }, { name: "Air New Zealand", iataCode: "NZ" }, { name: "Air Niugini", iataCode: "PX" }, { name: "Air Tahiti", iataCode: "VT" }, { name: "Air Tahiti Nui", iataCode: "TN" }, { name: "Air Transat", iataCode: "TS" }, { name: "AirAsia X", iataCode: "D7" }, { name: "AirAsia", iataCode: "AK" }, { name: "Aircalin", iataCode: "SB" }, { name: "Alaska Airlines", iataCode: "AS" }, { name: "Alitalia", iataCode: "AZ" }, { name: "All Nippon Airways", iataCode: "NH" }, { name: "Allegiant Air", iataCode: "G4" }, { name: "American Airlines", iataCode: "AA" }, { name: "Asiana Airlines", iataCode: "OZ" }, { name: "Avianca", iataCode: "AV" }, { name: "Azul Linhas Aereas Brasileiras", iataCode: "AD" }, { name: "Azur Air", iataCode: "ZF" }, { name: "Beijing Capital Airlines", iataCode: "JD" }, { name: "Boliviana de Aviacion", iataCode: "OB" }, { name: "British Airways", iataCode: "BA" }, { name: "Cathay Pacific", iataCode: "CX" }, { name: "Cebu Pacific Air", iataCode: "5J" }, { name: "China Airlines", iataCode: "CI" }, { name: "China Eastern Airlines", iataCode: "MU" }, { name: "China Southern Airlines", iataCode: "CZ" }, { name: "Condor", iataCode: "DE" }, { name: "Copa Airlines", iataCode: "CM" }, { name: "Delta Air Lines", iataCode: "DL" }, { name: "Easyfly", iataCode: "VE" }, { name: "EasyJet", iataCode: "U2" }, { name: "EcoJet", iataCode: "8J" }, { name: "Egyptair", iataCode: "MS" }, { name: "El Al", iataCode: "LY" }, { name: "Emirates Airlines", iataCode: "EK" }, { name: "Ethiopian Airlines", iataCode: "ET" }, { name: "Etihad Airways", iataCode: "EY" }, { name: "EVA Air", iataCode: "BR" }, { name: "Fiji Airways", iataCode: "FJ" }, { name: "Finnair", iataCode: "AY" }, { name: "Flybondi", iataCode: "FO" }, { name: "Flydubai", iataCode: "FZ" }, { name: "FlySafair", iataCode: "FA" }, { name: "Frontier Airlines", iataCode: "F9" }, { name: "Garuda Indonesia", iataCode: "GA" }, { name: "Go First", iataCode: "G8" }, { name: "Gol Linhas Aereas Inteligentes", iataCode: "G3" }, { name: "Hainan Airlines", iataCode: "HU" }, { name: "Hawaiian Airlines", iataCode: "HA" }, { name: "IndiGo Airlines", iataCode: "6E" }, { name: "Japan Airlines", iataCode: "JL" }, { name: "Jeju Air", iataCode: "7C" }, { name: "Jet2", iataCode: "LS" }, { name: "JetBlue Airways", iataCode: "B6" }, { name: "JetSMART", iataCode: "JA" }, { name: "Juneyao Airlines", iataCode: "HO" }, { name: "Kenya Airways", iataCode: "KQ" }, { name: "KLM Royal Dutch Airlines", iataCode: "KL" }, { name: "Korean Air", iataCode: "KE" }, { name: "Kulula.com", iataCode: "MN" }, { name: "LATAM Airlines", iataCode: "LA" }, { name: "Lion Air", iataCode: "JT" }, { name: "LOT Polish Airlines", iataCode: "LO" }, { name: "Lufthansa", iataCode: "LH" }, { name: "Libyan Airlines", iataCode: "LN" }, { name: "Linea Aerea Amaszonas", iataCode: "Z8" }, { name: "Malaysia Airlines", iataCode: "MH" }, { name: "Nordwind Airlines", iataCode: "N4" }, { name: "Norwegian Air Shuttle", iataCode: "DY" }, { name: "Oman Air", iataCode: "WY" }, { name: "Pakistan International Airlines", iataCode: "PK" }, { name: "Pegasus Airlines", iataCode: "PC" }, { name: "Philippine Airlines", iataCode: "PR" }, { name: "Qantas Group", iataCode: "QF" }, { name: "Qatar Airways", iataCode: "QR" }, { name: "Republic Airways", iataCode: "YX" }, { name: "Royal Air Maroc", iataCode: "AT" }, { name: "Ryanair", iataCode: "FR" }, { name: "S7 Airlines", iataCode: "S7" }, { name: "SAS", iataCode: "SK" }, { name: "Satena", iataCode: "9R" }, { name: "Saudia", iataCode: "SV" }, { name: "Shandong Airlines", iataCode: "SC" }, { name: "Sichuan Airlines", iataCode: "3U" }, { name: "Singapore Airlines", iataCode: "SQ" }, { name: "Sky Airline", iataCode: "H2" }, { name: "SkyWest Airlines", iataCode: "OO" }, { name: "South African Airways", iataCode: "SA" }, { name: "Southwest Airlines", iataCode: "WN" }, { name: "SpiceJet", iataCode: "SG" }, { name: "Spirit Airlines", iataCode: "NK" }, { name: "Spring Airlines", iataCode: "9S" }, { name: "SriLankan Airlines", iataCode: "UL" }, { name: "Star Peru", iataCode: "2I" }, { name: "Sun Country Airlines", iataCode: "SY" }, { name: "SunExpress", iataCode: "XQ" }, { name: "TAP Air Portugal", iataCode: "TP" }, { name: "Thai AirAsia", iataCode: "FD" }, { name: "Thai Airways", iataCode: "TG" }, { name: "TUI Airways", iataCode: "BY" }, { name: "Tunisair", iataCode: "TU" }, { name: "Turkish Airlines", iataCode: "TK" }, { name: "Ukraine International", iataCode: "PS" }, { name: "United Airlines", iataCode: "UA" }, { name: "Ural Airlines", iataCode: "U6" }, { name: "VietJet Air", iataCode: "VJ" }, { name: "Vietnam Airlines", iataCode: "VN" }, { name: "Virgin Atlantic Airways", iataCode: "VS" }, { name: "Virgin Australia", iataCode: "VA" }, { name: "VivaAerobus", iataCode: "VB" }, { name: "VOEPASS Linhas Aereas", iataCode: "2Z" }, { name: "Volaris", iataCode: "Y4" }, { name: "WestJet", iataCode: "WS" }, { name: "Wingo", iataCode: "P5" }, { name: "Wizz Air", iataCode: "W6" }];
@@ -2206,14 +2205,15 @@ Rules:
     }
     return parsed.fields;
   }
-  async function generateWithAI(fields, pageContext = {}) {
-    if (!AIML_API_KEY) {
-      throw new Error("AI generation failed \u2014 set AIML_API_KEY in .env and run npm run build");
+  async function generateWithAI(fields, pageContext = {}, apiKey) {
+    const key = (apiKey || "").trim();
+    if (!key) {
+      throw new Error("Enter and save your OpenAI API key to use AI generation");
     }
     const response = await fetch(AIML_API_URL, {
       method: "POST",
       headers: {
-        Authorization: `Bearer ${AIML_API_KEY}`,
+        Authorization: `Bearer ${key}`,
         "Content-Type": "application/json"
       },
       body: JSON.stringify({
@@ -2250,9 +2250,9 @@ Rules:
       };
     });
   }
-  async function generateData(fields, pageContext, mode) {
+  async function generateData(fields, pageContext, mode, options = {}) {
     if (mode === "ai") {
-      return generateWithAI(fields, pageContext);
+      return generateWithAI(fields, pageContext, options.apiKey);
     }
     return generateDemoData(fields.map((f3) => ({ ...f3, type: f3.detectedType || f3.type })));
   }
@@ -2343,7 +2343,8 @@ Rules:
   var DEFAULTS = {
     uiMode: "sidePanel",
     allowDrag: false,
-    genMode: "faker"
+    genMode: "faker",
+    aimlApiKey: ""
   };
   async function getSettings() {
     const result = await chrome.storage.local.get(STORAGE_KEY2);
@@ -2365,7 +2366,8 @@ Rules:
     editingTemplateId: null,
     builderFields: [],
     minimized: false,
-    genMode: "faker"
+    genMode: "faker",
+    aimlApiKey: ""
   };
   async function getActiveTab() {
     const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
@@ -2452,7 +2454,9 @@ Rules:
         showStatus("Generating with AI...");
       }
       const pageContext = await sendToContent("getPageContext");
-      state.previewData = await generateData(fields, pageContext, state.genMode);
+      state.previewData = await generateData(fields, pageContext, state.genMode, {
+        apiKey: state.aimlApiKey
+      });
       const resolved = await resolveSelectValues(state.previewData);
       state.previewData = resolved;
       renderPreviewTable("scan-preview", state.previewData);
@@ -2685,6 +2689,17 @@ Rules:
       btn.addEventListener("click", () => switchTab(btn.dataset.tab));
     });
   }
+  function updateAiSettingsVisibility() {
+    const el = document.getElementById("ai-settings");
+    if (el) el.classList.toggle("hidden", state.genMode !== "ai");
+  }
+  async function handleSaveApiKey() {
+    const input = document.getElementById("api-key-input");
+    const key = input.value.trim();
+    state.aimlApiKey = key;
+    await saveSettings({ aimlApiKey: key });
+    showStatus(key ? "API key saved." : "API key cleared.");
+  }
   function initGenModeToggle() {
     const radios = document.querySelectorAll('input[name="gen-mode"]');
     radios.forEach((radio) => {
@@ -2693,14 +2708,25 @@ Rules:
         if (!radio.checked) return;
         state.genMode = radio.value;
         await saveSettings({ genMode: state.genMode });
+        updateAiSettingsVisibility();
         if (state.scannedFields.length) {
           await regeneratePreview();
         }
       });
     });
+    updateAiSettingsVisibility();
+  }
+  function initApiKeyField() {
+    const input = document.getElementById("api-key-input");
+    input.value = state.aimlApiKey;
+    document.getElementById("save-api-key-btn").addEventListener("click", handleSaveApiKey);
+    input.addEventListener("keydown", (e2) => {
+      if (e2.key === "Enter") handleSaveApiKey();
+    });
   }
   function initScanTab() {
     initGenModeToggle();
+    initApiKeyField();
     document.getElementById("scan-btn").addEventListener("click", handleScan);
     document.getElementById("regenerate-btn").addEventListener("click", () => regeneratePreview());
     document.getElementById("fill-btn").addEventListener("click", () => handleFill(state.previewData));
@@ -2742,6 +2768,7 @@ Rules:
     initTabs();
     const settings = await getSettings();
     state.genMode = settings.genMode || "faker";
+    state.aimlApiKey = settings.aimlApiKey || "";
     initScanTab();
     initTemplatesTab();
     initCreateTab();

@@ -38,6 +38,18 @@
           <input type="radio" name="gen-mode" value="ai"> AI
         </label>
       </div>
+      <div id="ai-settings" class="ai-settings hidden">
+        <label class="api-key-label" for="api-key-input">OpenAI API key</label>
+        <div class="api-key-row">
+          <input type="password" id="api-key-input" placeholder="sk-..." autocomplete="off">
+          <button id="save-api-key-btn" class="btn secondary" type="button">Save</button>
+        </div>
+        <p class="api-key-hint">
+          Get a key from
+          <a href="https://platform.openai.com/api-keys" target="_blank" rel="noopener">OpenAI API keys</a>
+          (requires an OpenAI account and billing).
+        </p>
+      </div>
       <div class="actions">
         <button id="scan-btn" class="btn primary">Scan Page</button>
         <button id="regenerate-btn" class="btn secondary">Regenerate</button>

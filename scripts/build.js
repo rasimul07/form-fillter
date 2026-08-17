@@ -3,9 +3,13 @@ const esbuild = require('esbuild');
 
 const watch = process.argv.includes('--watch');
 
+function resolveModel() {
+  const raw = process.env.AIML_MODEL || 'gpt-4o';
+  return raw.replace(/^openai\//, '') || 'gpt-4o';
+}
+
 const define = {
-  __AIML_API_KEY__: JSON.stringify(process.env.AIML_API_KEY || ''),
-  __AIML_MODEL__: JSON.stringify(process.env.AIML_MODEL || 'openai/gpt-4o'),
+  __AIML_MODEL__: JSON.stringify(resolveModel()),
 };
 
 const common = {
