@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Filler Test Page</title>
+  <style>
+    body { font-family: sans-serif; max-width: 480px; margin: 40px auto; padding: 0 20px; }
+    label { display: block; margin-top: 12px; font-weight: 600; }
+    input, select, textarea { width: 100%; padding: 8px; margin-top: 4px; }
+  </style>
+</head>
+<body>
+  <h1>Test Signup Form</h1>
+  <form>
+    <label for="first-name">First Name</label>
+    <input type="text" id="first-name" name="firstName">
+
+    <label for="last-name">Last Name</label>
+    <input type="text" id="last-name" name="lastName">
+
+    <label for="email">Email Address</label>
+    <input type="email" id="email" name="email">
+
+    <label for="phone">Phone Number</label>
+    <input type="tel" id="phone" name="phone">
+
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password">
+
+    <label for="dob">Date of Birth</label>
+    <input type="date" id="dob" name="dob">
+
+    <label for="city">City</label>
+    <input type="text" id="city" name="city">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="">Select...</option>
+      <option value="us">United States</option>
+      <option value="uk">United Kingdom</option>
+      <option value="in">India</option>
+    </select>
+  </form>
+</body>
+</html>

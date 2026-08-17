@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Auto Form Filler",
+  "version": "1.0.0",
+  "description": "Scan forms, generate demo data with Faker, and fill forms from saved templates.",
+  "permissions": ["activeTab", "scripting", "storage"],
+  "host_permissions": ["https://api.aimlapi.com/*"],
+  "icons": {
+    "48": "icons/icon48.png",
+    "96": "icons/icon96.png"
+  },
+  "action": {
+    "default_icon": {
+      "48": "icons/icon48.png",
+      "96": "icons/icon96.png"
+    },
+    "default_popup": "popup/index.html",
+    "default_title": "Auto Form Filler"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content/content.bundle.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}

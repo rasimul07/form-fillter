@@ -1,0 +1,16 @@
+{
+  "name": "form-filler",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "node scripts/build.js",
+    "watch": "node scripts/build.js --watch"
+  },
+  "devDependencies": {
+    "dotenv": "^16.4.7",
+    "esbuild": "^0.25.0"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^9.6.0"
+  }
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auto Form Filler</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="title-bar" id="title-bar">
+    <span class="title-bar-text">Auto Form Filler</span>
+    <div class="window-controls">
+      <button id="minimize-btn" class="win-btn" type="button" title="Minimize">—</button>
+    </div>
+  </div>
+  <div class="container" id="app-content">
+    <header>
+      <h1>Auto Form Filler</h1>
+      <p class="subtitle">Scan, generate demo data, and fill forms</p>
+    </header>
+
+    <nav class="tabs">
+      <button class="tab-btn active" data-tab="scan">Scan</button>
+      <button class="tab-btn" data-tab="templates">Templates</button>
+      <button class="tab-btn" data-tab="create">Create</button>
+    </nav>
+
+    <div id="status" class="status"></div>
+
+    <!-- Scan Tab -->
+    <section id="tab-scan" class="tab-panel active">
+      <div class="gen-mode-toggle">
+        <span class="toggle-label">Generate with:</span>
+        <label class="toggle-option">
+          <input type="radio" name="gen-mode" value="faker" checked> Faker
+        </label>
+        <label class="toggle-option">
+          <input type="radio" name="gen-mode" value="ai"> AI
+        </label>
+      </div>
+      <div class="actions">
+        <button id="scan-btn" class="btn primary">Scan Page</button>
+        <button id="regenerate-btn" class="btn secondary">Regenerate</button>
+        <button id="fill-btn" class="btn primary">Fill Form</button>
+      </div>
+      <div id="scan-preview" class="preview-area">
+        <p class="empty">Click "Scan Page" to detect form fields.</p>
+      </div>
+      <div class="save-row">
+        <input type="text" id="template-name" placeholder="Template name">
+        <button id="save-template-btn" class="btn secondary">Save as Template</button>
+      </div>
+    </section>
+
+    <!-- Templates Tab -->
+    <section id="tab-templates" class="tab-panel">
+      <input type="search" id="template-search" placeholder="Search templates..." class="search-input">
+      <div class="template-section">
+        <h3>Pinned</h3>
+        <div id="pinned-list" class="template-list"></div>
+      </div>
+      <div class="template-section">
+        <h3>Recent</h3>
+        <div id="recent-list" class="template-list"></div>
+      </div>
+      <div class="template-section">
+        <h3>All Templates</h3>
+        <div id="all-list" class="template-list"></div>
+      </div>
+    </section>
+
+    <!-- Create Tab -->
+    <section id="tab-create" class="tab-panel">
+      <div class="builder-form">
+        <input type="text" id="builder-name" placeholder="Template name">
+        <input type="text" id="builder-url" placeholder="URL pattern (optional)">
+      </div>
+      <div class="builder-header">
+        <h3>Fields</h3>
+        <button id="add-field-btn" class="btn small secondary">+ Add Field</button>
+      </div>
+      <div id="builder-fields" class="builder-fields">
+        <p class="empty">Add fields to build a template.</p>
+      </div>
+      <div class="actions">
+        <button id="builder-generate-btn" class="btn secondary">Generate Demo Data</button>
+        <button id="builder-fill-btn" class="btn primary">Fill on Page</button>
+        <button id="builder-save-btn" class="btn secondary">Save Template</button>
+      </div>
+      <div id="builder-preview" class="preview-area"></div>
+    </section>
+  </div>
+  <script src="popup.bundle.js"></script>
+</body>
+</html>
